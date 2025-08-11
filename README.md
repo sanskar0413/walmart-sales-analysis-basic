@@ -42,9 +42,27 @@ The goal is to derive actionable insights into sales performance, customer behav
   pip install pandas numpy sqlalchemy mysql-connector-python psycopg2
 
 
-### **5. Install Kaggle API
+### 5. Install Kaggle API
 
 To interact with Kaggle datasets directly from your environment, install the Kaggle API:
 
 ```bash
 pip install kaggle
+```
+
+### 6. Configure Kaggle API Credentials
+Go to your Kaggle account settings: https://www.kaggle.com/account
+
+Scroll to the API section and click Create New API Token.
+
+This will download a file named kaggle.json.
+
+Place kaggle.json in the following location:
+```bash
+Windows: C:\Users\<YourUsername>\.kaggle\
+```
+### 7. Download Dataset from Kaggle
+Use the Kaggle API command to download a dataset.
+```bash
+!kaggle datasets download -d najir0123/walmart-10k-sales-datasets
+```
